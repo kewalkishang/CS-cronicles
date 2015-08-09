@@ -18,6 +18,11 @@
         <item>kewal</item>
         <item>kishan</item>
     </string-array>
+     <string-array name="mahima">
+        <item>singh</item>
+        <item>deo</item>
+    </string-array>
+    
 
     <string name="title_activity_groups">groups</string>
     <string name="hello_world">Hello world!</string>
