@@ -14,7 +14,7 @@ import com.example.mahimasinghdeo.navigationdrawer.R;
  */
 public class fragc extends Fragment {
     ListView lv;
-    String[] items={"ASdasdaad","asdhuasduahcopjvsfmefm","auoshddasioshda"};
+    String[] items={"2 ) GANDHI JAYANTHI","5 ) SECOND IA","6 ) SECOND IA","7 ) SECOND IA","12) MAHAALAYA","22) AYUDHA POOJA","23) VIJAYA DASHAMI","24) MOHARRAM","27) VALMIKI JAYANTHI"};
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragc, container, false);
         lv = (ListView) v.findViewById(R.id.listView3);

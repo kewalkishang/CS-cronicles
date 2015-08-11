@@ -61,22 +61,22 @@ public class calendar extends FragmentActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             if(position==0){
-                return "Jan";
+                return "AUGUST";
 
             }
             if(position==1){
-                return "Feb";
+                return "SEPTEMBER";
 
             }if(position==2){
-                return "March";
+                return "OCTOBER";
 
             }
             if(position==3){
-                return "April";
+                return "NOVEMBER";
 
             }
             if(position==4){
-                return "May";
+                return "DECEMBER";
 
             }
             return null;

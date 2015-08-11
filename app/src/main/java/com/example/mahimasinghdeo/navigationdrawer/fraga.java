@@ -15,7 +15,8 @@ import com.example.mahimasinghdeo.navigationdrawer.R;
  */
 public class fraga extends Fragment {
     ListView lv;
-    String items[]={"ASDHASDHNAS","VSUDVSUDHF","ADGHAOISJDAPSD"};
+    String items[]={"3)  START OF CLASSES","8)  FACULTY MEETING","15) INDEPENDENCE DAY","21) PROCTOR MEETING","22) PRE-PLACEMENT ACTIVTY"};
+
     public void onAttach(Activity activity) {
         super.onAttach(activity);
     }

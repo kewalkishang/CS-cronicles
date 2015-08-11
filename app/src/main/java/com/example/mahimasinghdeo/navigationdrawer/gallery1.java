@@ -19,7 +19,10 @@ import java.util.ArrayList;
 
 
 public class gallery1 extends ActionBarActivity {
+  int pic1[]={R.drawable.pica,R.drawable.picb,R.drawable.picc,R.drawable.picd,R.drawable.pice,R.drawable.picf};
+    String pics[]={"LUMIERE '15","SPORTS DAY","AYUDHA POOJA","ORIENTATION","TEACHERS DAY","FRESHERS"};
 
+//int pic1[]={R.drawable.pica,R.drawable.pica,R.drawable.pica,R.drawable.pica,R.drawable.pica,R.drawable.pica};
     RecyclerView recyclerView;
     CardView cardView;
     StaggeredGridLayoutManager manager;
@@ -73,15 +76,16 @@ public class gallery1 extends ActionBarActivity {
         }
 
         @Override
-        public void onBindViewHolder(holder holder, final int position) {
-            holder.TV.setText("kewal");
-            holder.DI.setImageResource(R.drawable.ic_launcher);
+        public void onBindViewHolder(holder holder,  int position) {
+            final int pos = position;
+            holder.TV.setText(pics[position]);
+            holder.DI.setImageResource(pic1[position]);
             holder.DI.setHeightRatio(getRandomHeight(position));
             holder.DI.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(gallery1.this, gallery2.class);
-                    intent.putExtra("pos", position);
+                    intent.putExtra("pos", pos);
                     startActivity(intent);
                 }
             });
@@ -92,7 +96,7 @@ public class gallery1 extends ActionBarActivity {
 
         @Override
         public int getItemCount() {
-            return 18;
+            return 6;
         }
 
         public class holder extends RecyclerView.ViewHolder {

@@ -17,7 +17,7 @@ public class gallery3 extends ActionBarActivity {
         im= (ImageView) findViewById(R.id.imageview);
         Intent intent=getIntent();
         int y=intent.getIntExtra("pos",-1);
-        im.setImageResource(R.drawable.ic_launcher);
+        im.setImageResource(R.drawable.picc);
 
     }
 
