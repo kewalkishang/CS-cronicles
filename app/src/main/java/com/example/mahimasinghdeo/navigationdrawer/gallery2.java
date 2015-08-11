@@ -13,7 +13,12 @@ import com.etsy.android.grid.util.DynamicHeightImageView;
 
 
 public class gallery2 extends ActionBarActivity {
-
+int pica[]={};
+    int picb[]={};
+    int picc[]={};
+    int picd[]={};
+    int pice[]={};
+    int picf[]={};
     RecyclerView recyclerView;
     CardView cardView;
     StaggeredGridLayoutManager manager;
