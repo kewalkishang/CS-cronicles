@@ -13,15 +13,23 @@ import com.etsy.android.grid.util.DynamicHeightImageView;
 
 
 public class gallery2 extends ActionBarActivity {
-int pica[]={};
-    int picb[]={};
-    int picc[]={};
-    int picd[]={};
-    int pice[]={};
-    int picf[]={};
+   // int size;
+
+    int pica[] = {R.drawable.lu1,R.drawable.lu2,R.drawable.lu3,R.drawable.lu4,R.drawable.lu5,R.drawable.lu6,R.drawable.lu7,R.drawable.lu8,R.drawable.lu9,R.drawable.lu10,R.drawable.lu11,R.drawable.lu12,R.drawable.lu13};
+    int picb[] = {R.drawable.bas,R.drawable.bas2,R.drawable.bas3,R.drawable.bas4,R.drawable.bas5,R.drawable.bas6,R.drawable.bas7,R.drawable.bas8,R.drawable.bas9,R.drawable.bas10};
+    int picc[] = {R.drawable.ay1,R.drawable.ay2,R.drawable.ay3,R.drawable.ay4,R.drawable.ay5,R.drawable.ay6,R.drawable.ay7,R.drawable.ay8,R.drawable.ay9,R.drawable.ay10,R.drawable.ay11};
+    int picd[] = {R.drawable.or1,R.drawable.or2,R.drawable.or3,R.drawable.or4,R.drawable.or5,R.drawable.or6};
+    int pice[] = {R.drawable.td1,R.drawable.td2,R.drawable.td3,R.drawable.td4,R.drawable.td5,R.drawable.td6,R.drawable.td7,R.drawable.td8,R.drawable.td9,R.drawable.td10,R.drawable.td11,R.drawable.td12,R.drawable.td13,R.drawable.td14,R.drawable.td15};
+    int picf[] = {R.drawable.fr2,R.drawable.fr1,R.drawable.fr3,R.drawable.fr4,R.drawable.fr5,R.drawable.fr6,R.drawable.fr7,R.drawable.fr8,R.drawable.fr9,R.drawable.fr11};
+    int[][] pic={pica,picb,picc,picd,pice,picf};
+    int len;
     RecyclerView recyclerView;
     CardView cardView;
     StaggeredGridLayoutManager manager;
+  //  Intent intent = getIntent();
+    int y = intent.getIntExtra("pos", -1);
+
+
     //String[] items = getResources().getStringArray(R.array.kewal);
     // int[] gallery={};
     @Override
@@ -35,11 +43,11 @@ int pica[]={};
         manager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(new MyAdapter());
-        Intent intent = getIntent();
-        int y = intent.getIntExtra("pos", -1);
+      //  Intent intent = getIntent();
+      //  int y = intent.getIntExtra("pos", -1);
 
 
-    }
+}
 
 
     public class MyAdapter extends RecyclerView.Adapter<MyAdapter.holder> {
@@ -48,18 +56,18 @@ int pica[]={};
             View V = getLayoutInflater().inflate(R.layout.single3, parent, false);
             holder mhold = new holder(V);
 
-            return mhold;
+         return mhold;
         }
 
         @Override
         public void onBindViewHolder(holder holder, final int position) {
 
-            holder.DI.setImageResource(R.drawable.ic_launcher);
+            holder.DI.setImageResource(pic[y][position]);
             holder.DI.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent=new Intent(gallery2.this,gallery3.class);
-                    intent.putExtra("pos",position);
+                    Intent intent = new Intent(gallery2.this, gallery3.class);
+                    intent.putExtra("pos", position);
                     startActivity(intent);
                 }
             });
@@ -68,7 +76,24 @@ int pica[]={};
 
         @Override
         public int getItemCount() {
-            return 8;
+
+            switch(y)
+        {case 0:len= pica.length;
+            break;
+            case 1:len=  picb.length;
+                break;
+            case 2:len=  picc.length;
+                break;
+            case 3:len=  picd.length;
+                break;
+            case 4:len= pice.length;
+                break;
+            case 5:len= picf.length;
+                break;
+
+
+        }
+            return len;
         }
 
         public class holder extends RecyclerView.ViewHolder {
