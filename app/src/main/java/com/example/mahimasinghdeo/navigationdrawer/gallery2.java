@@ -26,9 +26,8 @@ public class gallery2 extends ActionBarActivity {
     RecyclerView recyclerView;
     CardView cardView;
     StaggeredGridLayoutManager manager;
-  //  Intent intent = getIntent();
-    int y = intent.getIntExtra("pos", -1);
 
+ int y;
 
     //String[] items = getResources().getStringArray(R.array.kewal);
     // int[] gallery={};
@@ -43,8 +42,25 @@ public class gallery2 extends ActionBarActivity {
         manager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(new MyAdapter());
-      //  Intent intent = getIntent();
-      //  int y = intent.getIntExtra("pos", -1);
+       Intent intent = getIntent();
+        y = intent.getIntExtra("pos", -1);
+        switch (y)
+        {case 0:len=pica.length;
+              break;
+
+            case 1:len=picb.length;
+                break;
+            case 2:len=picc.length;
+                break;
+            case 3:len=picd.length;
+                break;
+            case 4:len=pice.length;
+                break;
+            case 5:len=picf.length;
+                break;
+
+
+        }
 
 
 }
@@ -54,9 +70,9 @@ public class gallery2 extends ActionBarActivity {
         @Override
         public holder onCreateViewHolder(ViewGroup parent, int viewType) {
             View V = getLayoutInflater().inflate(R.layout.single3, parent, false);
-            holder mhold = new holder(V);
+            //holder mhold1 = new holder(V);
 
-         return mhold;
+         return new holder(V);
         }
 
         @Override
@@ -67,7 +83,7 @@ public class gallery2 extends ActionBarActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(gallery2.this, gallery3.class);
-                    intent.putExtra("pos", position);
+                    intent.putExtra("pic",pic[y][position]);
                     startActivity(intent);
                 }
             });
@@ -77,22 +93,7 @@ public class gallery2 extends ActionBarActivity {
         @Override
         public int getItemCount() {
 
-            switch(y)
-        {case 0:len= pica.length;
-            break;
-            case 1:len=  picb.length;
-                break;
-            case 2:len=  picc.length;
-                break;
-            case 3:len=  picd.length;
-                break;
-            case 4:len= pice.length;
-                break;
-            case 5:len= picf.length;
-                break;
 
-
-        }
             return len;
         }
 

@@ -15,9 +15,10 @@ import android.widget.TextView;
 
 public class faculty extends Activity implements AdapterView.OnItemClickListener {
     ListView lv1;
-    String items[] = {"pikachu", "charizard", "poliwag", "geodude", "pidgey", "jynx", "bulbasaur", "got"};
-    String nums[] = {"1213", "13221", "1231", "13123153", "14141134", "56457", "235756", "2465426"};
-    int IMAGES[] = {R.drawable.ic_launcher, R.drawable.abc_cab_background_internal_bg, R.drawable.ic_launcher, R.drawable.abc_cab_background_internal_bg, R.drawable.ic_launcher, R.drawable.abc_cab_background_internal_bg, R.drawable.ic_launcher, R.drawable.abc_cab_background_internal_bg};
+    String items[] = {" Dr. Ramesh Babu D.R", " Dr. Amutha S ", " Mr. Sasidhar B ", " Mr. Amaresha K.S", " Mr. Anil Sagar T", " Ms. Anitha M", " Mrs. Annapoorna ", "Anupama Vijay Kumar"," Dr. Arbind Kumar Gupta"," Mr. Nakatha Arun Kumar"," Mrs. Asha Philip"," Ms. Asnika.S"," Bhanupriya M P"," Prof. Bhaskara Rao"," Mr. Deepak.G","  Dhara K N"," Mr. Harish Kumar N","  Mrs. Kusuma M"," Mrs. Mamatha.R","  Mr. Mohd. Tajuddin"," Mrs. Monika P"," Mr. Nagaraj J"," Ms. Nayana N "," Mrs. Poornima A.B"," Mr. Prasad A.M ","  Mrs. Preeti Satish","  Prof. Ramakrishna K.A","  Mrs. Rashmi S.R", "  Mr. Ravichandra H","  Mrs. Sahana Damale", "  Mrs. Sandhya N ","  Mr. Sasikumar Gurumoorthy","  Mrs. Shubha Bhat", " Mrs. SmeraLingesh"," Mrs. Sonal N Kharecha"," Mrs. Sunitha M S","  Mrs. Swetha M D","  Dr. S. Venkatesan","  Mrs. Vindhya M"};
+
+    String nums[] = {" Designation Professor & Head","Designation Professor","Designation Asst. Prof.","Designation Asst. Prof.","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Prof.","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof.","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Prof.","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designation Asst. Prof","Designated Prof.","Designated Asst. Prof."};
+    int IMAGES[] = {R.drawable.f1,R.drawable.f2,R.drawable.sasi,R.drawable.amaresh,R.drawable.anil,R.drawable.anitha,R.drawable.annapoor,R.drawable.anupam,R.drawable.arbi,R.drawable.arun,R.drawable.asha,R.drawable.asnika,R.drawable.bhanu,R.drawable.bhask,R.drawable.deep,R.drawable.dhar,R.drawable.haris,R.drawable.kusum,R.drawable.mamatha,R.drawable.mohd,R.drawable.monika,R.drawable.nagar,R.drawable.naya,R.drawable.poorni,R.drawable.prasa,R.drawable.preet,R.drawable.ramak,R.drawable.rashm,R.drawable.ravi,R.drawable.sah,R.drawable.sand,R.drawable.sasik,R.drawable.shu,R.drawable.sme,R.drawable.son,R.drawable.suni,R.drawable.swe,R.drawable.venkat,R.drawable.vindh};
 
 
     public class customadapter extends BaseAdapter {
@@ -33,7 +34,7 @@ public class faculty extends Activity implements AdapterView.OnItemClickListener
             return items[position];
         }
 
-        @Override
+
         public long getItemId(int position) {
             return 0;
         }

@@ -5,7 +5,8 @@
     android:id="@+id/cardview"
     android:padding="4dp"
     android:layout_margin="5dp"
-    app:cardBackgroundColor="#ff00ff"
+
+    app:cardBackgroundColor="#000000"
     app:cardCornerRadius="5dp"
     android:elevation="3dp">
 
@@ -24,7 +25,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textview"
             android:layout_below="@+id/imageview"
-            android:text="kewal"
+            android:textColor="#ffffff"
             android:layout_alignRight="@+id/imageview"
             android:layout_alignLeft="@+id/imageview"
             android:gravity="center"

@@ -2,32 +2,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+
     tools:context="makh.com.teacher.MainActivity2">
+
+    <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:src="@drawable/b"
+       android:id="@+id/im2"
+
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView" />
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/imageView"
-        android:padding="10dp"/>
-
-    <TextView
-        android:text="Above"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:padding="10dp"
-        android:layout_toRightOf="@+id/imageView"
-        />
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="@string/hello_world"
         android:layout_width="match_parent"
         android:id="@+id/textView2"
-        android:padding="10dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView" />
+        android:background="#ffaecad1"
+        android:paddingLeft="20dp"
+        android:textSize="18dp"
+        android:paddingRight="20dp"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/im2" />
 </RelativeLayout>

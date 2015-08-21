@@ -76,6 +76,14 @@
             android:name=".achievements3"
             android:label="@string/title_activity_achievements3" >
         </activity>
+        <activity
+            android:name=".pdfviewer"
+            android:label="@string/title_activity_pdfviewer" >
+        </activity>
+        <activity
+            android:name=".MainActivity3"
+            android:label="@string/title_activity_main_activity3" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,21 +1,19 @@
 package com.example.mahimasinghdeo.navigationdrawer;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,6 +39,12 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 //        tb.setTitle("hakm");
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setDisplayUseLogoEnabled(false);
+        actionBar.setHomeButtonEnabled(true);
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         drawerListener = new ActionBarDrawerToggle(MainActivity.this, drawerLayout, R.string.drawer_open, R.string.drawer_close);
@@ -54,12 +58,23 @@ public class MainActivity extends ActionBarActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+      //  return super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (drawerListener.onOptionsItemSelected(item)) {
-            return true;
+
 
         }
-        return super.onOptionsItemSelected(item);
+        if(item.getItemId()==R.id.credits){
+           Intent intent=new Intent(MainActivity.this,MainActivity3.class);
+            startActivity(intent);
+        }
+        return true;
     }
 
     @Override
@@ -141,16 +156,16 @@ public class MainActivity extends ActionBarActivity {
 
                         startActivity(intent);
                     }
-                   if (position == 2) {
-                        Intent intent = new Intent(getApplication(), achievements.class);
+                    if (position == 2) {
+                        Intent intent = new Intent(getApplication(), achievements2.class);
 
                         startActivity(intent);
                     }
                     if (position == 3) {
-                       Intent intent = new Intent(getApplication(), gallery1.class);
+                        Intent intent = new Intent(getApplication(), gallery1.class);
 
-                       startActivity(intent);
-                    }else if (position == 4) {
+                        startActivity(intent);
+                    } else if (position == 4) {
                         Intent in = new Intent(MainActivity.this, calendar.class);
                         startActivity(in);
                     } else if (position == 5) {
@@ -181,4 +196,5 @@ public class MainActivity extends ActionBarActivity {
             }
         }
     }
+
 }

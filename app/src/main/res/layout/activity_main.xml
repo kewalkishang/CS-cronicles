@@ -6,29 +6,115 @@
 
     <include
         android:id="@+id/tb"
+
         layout="@layout/appbar" />
 
     <FrameLayout
         android:id="@+id/mainContent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
 
-   <!-- <ListView
-        android:id="@+id/drawerList"
-        android:layout_width="240dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="left"
-        android:background="#b0c4de"
-        android:divider="@null"
-        android:entries="@array/Categories"></ListView>
--->
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ffff"
+                android:text="Computer Science"
+                android:textSize="25sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vision of the Department"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="To create an optimistic learning environment for students to hone their skills to bring in innovation so as to produce sustainable engineers and global leaders in the field of Computer Science for societal upbringing." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mission of the Department"
+
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text=" To improve the problem solving capability of students through continual learning so as to
+        produce quality engineers in the field of Computer Science.\n
+        To bridge the gap between industry and academia by bringing state of the art technology to
+        the classroom.\n
+        To encourage innovation through multidisciplinary research and development activities.\n
+        To inculcate human values and ethics, to serve the society in all possible ways.\n
+" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From the HOD's Desk:"
+
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="
+        The Department of CSE is distinctively positioned to create the technological leaders of
+        tomorrow. Our goal is to ensure that our engineering graduates are well prepared to play the
+        roles of problem solvers, project leaders, entrepreneurs, and above all ethical citizens of
+        a global society. Our faculty members are known for their commitment towards teaching and
+        practice of novel teaching-learning methodologies.\n
+\n
+        Our objective is to empower our students with latest technical knowledge and skills and help
+        them meet increasing global challenges of emerging technologies. We provide them with the
+        best teaching faculty, state-of-the-art facilities, excellent research and development
+        environment, to find fulfilling and challenging internships, co-op jobs and careers. Our aim
+        is not solely to develop technical skills but to provide professional grooming and guidance
+        so that our students mould into thorough professionals and inspiring individuals when they
+        enter into the real-time environment.\n
+\n
+        Dr. Ramesh Babu D. R.\n
+        Professor and Head of the Department.\n
+        "
+                android:textSize="12dp"
+
+                />
+        </LinearLayout>
+
+
+  </ScrollView>
+
+
+
+    </FrameLayout>
+
+    <!-- <ListView
+         android:id="@+id/drawerList"
+         android:layout_width="240dp"
+         android:layout_height="match_parent"
+         android:layout_gravity="left"
+         android:background="#b0c4de"
+         android:divider="@null"
+         android:entries="@array/Categories"></ListView>
+ -->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/drawerList"
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
         android:background="#b0c4de"
-        android:divider="@null"
+        android:divider="@android:color/black"
+
         android:entries="@array/Categories"></android.support.v7.widget.RecyclerView>
 
 </android.support.v4.widget.DrawerLayout>

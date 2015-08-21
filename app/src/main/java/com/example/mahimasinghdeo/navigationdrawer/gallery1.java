@@ -1,6 +1,6 @@
 package com.example.mahimasinghdeo.navigationdrawer;
 
-import android.content.DialogInterface;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -58,11 +58,11 @@ public class gallery1 extends ActionBarActivity {
         if (position > lastPosition) {
             Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_in_left);
             viewToAnimate.startAnimation(animation);
-            lastPosition = position;
+            //lastPosition = position;
         } else {
             Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), android.R.anim.slide_in_left);
             viewToAnimate.startAnimation(animation);
-            lastPosition = position;
+          //  lastPosition = position;
         }
     }
 
@@ -70,14 +70,15 @@ public class gallery1 extends ActionBarActivity {
         @Override
         public holder onCreateViewHolder(ViewGroup parent, int viewType) {
             View V = getLayoutInflater().inflate(R.layout.single3, parent, false);
-            holder mhold = new holder(V);
+           // holder mhold = new holder(V);
 
-            return mhold;
+            return new holder(V);
         }
 
         @Override
-        public void onBindViewHolder(holder holder,  int position) {
-            final int pos = position;
+        public void onBindViewHolder(holder holder,  final int position)
+        {
+
             holder.TV.setText(pics[position]);
             holder.DI.setImageResource(pic1[position]);
             holder.DI.setHeightRatio(getRandomHeight(position));
@@ -85,7 +86,7 @@ public class gallery1 extends ActionBarActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(gallery1.this, gallery2.class);
-                    intent.putExtra("pos", pos);
+                    intent.putExtra("pos", position);
                     startActivity(intent);
                 }
             });

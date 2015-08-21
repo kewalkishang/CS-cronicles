@@ -10,65 +10,7 @@ import android.widget.Toast;
 
 
 public class syllabus3 extends ActionBarActivity {
-    String textual[]={"WHA IS THE MEANING OF THSI" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "" +
-            "asdamsdaklskdjalsda" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "" +
-            "" +
-            "" +
-            "" +
-            "" +
-            "" +
-            "" +
-            "asd;alsdas;kldasd;aklsdkl;aksda","ASIDJADSJIA","FOIRIF","GIVDD","POACNAK","IHASSD"};
+  int [] textual={R.string.math};
     TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +19,7 @@ public class syllabus3 extends ActionBarActivity {
         tv= (TextView) findViewById(R.id.tv3);
         Intent intent=getIntent();
         int y=intent.getIntExtra("name",-1);
+
         tv.setText(textual[y]);
 
     }

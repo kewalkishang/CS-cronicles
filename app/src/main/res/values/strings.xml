@@ -9,22 +9,333 @@
     <string-array name="Categories">
         <item>Faculty</item>
         <item>Clubs</item>
-        <item>Achievements/placements</item>
+        <item>placements</item>
         <item>Gallery</item>
         <item>Calender</item>
         <item>Syllabus</item>
     </string-array>
-    <string-array name="kewal">//look there is a comment here. now im gonna push it and see if you can see it too!!!
-        <item>kewal</item>//this is a change
-        <item>kishan</item>//another change
-        // a change on every line
-    </string-array>// do you see this?
-     <string-array name="mahima">
+    <string-array name="kewal">
+//look there is a comment here. now im gonna push it and see if you can see it too!!!                <item>kewal</item>
+        <item>kishan</item>
+    </string-array>
+    <string-array name="mahima">
         <item>singh</item>
         <item>deo</item>
     </string-array>
-    
 
+    <string name="math">           ENGINEERING MATHEMATICS-3(10MAT31)\n
+                               			         Part-A\n
+Unit-1\n
+FOURIER SERIES\n
+7 hours\n
+\n
+\n
+Periodic functions, Dirichlet\'s conditions, Fourier series of periodic functions\n
+of period 2π and arbitrary period, half range Fourier series. Complex form of \n
+Fourier Series. Practical harmonic analysis.\n
+\n
+Unit-2\n
+FOURIER TRANSFORMS\n
+6 hours\n
+\n
+Infinite Fourier transform, Fourier Sine and Cosine transforms, properties,Inverse transforms\n
+\n
+Unit-3\n
+APPLICATIONS OF PDE\n
+6 hours\n
+\n
+Various possible solutions of one dimensional wave and heat equations, two dimensional Laplace\’s\n
+equation by the method of separation of variables,Solution of all these equations with specified\n
+boundary conditions.D\’Alembert\’s solution of one dimensional wave equation.\n
+\n
+Unit-4\n
+CURVE FITTING AND OPTIMIZATION\n
+7 hours\n
+\n
+Curve fitting by the method of least squares- Fitting of curves of the form\n
+y=ax+b, y=ax2+bx+c, y=aebx , y=axb\n
+Optimization: Linear programming, mathematical formulation of linear programming problem (LPP),\n
+Graphical method and simplex method.\n
+\n Part B\n
+\n
+Unit-5
+NUMERICAL METHODS - 1\n
+6 hours\n
+\n
+Numerical Solution of algebraic and transcendental equations: Regula-falsimethod, Newton - Raphson method. \nIterative methods of solution of a systemof equations: Gauss-seidel and Relaxation methods. Largest eigen value andthe corresponding eigen vector by Rayleigh’s power method.\n
+\n
+Unit-6\n
+NUMERICAL METHODS – 2\n
+7 hours\n
+\n
+Finite differences: Forward and backward differences, Newton\’s forward and backward interpolation\n
+formulae. Divided differences - Newton\’s divided difference formula, Lagrange\’s interpolation\n
+formula and inverse interpolation formula.\n
+\n
+Numerical integration: Simpson\’s one-third, three-eighth and Weddle\’s rules\n
+(All formulae/rules without proof)\n
+\n
+Unit-7\n
+NUMERICAL METHODS – 3\n
+7 hours\n
+\n
+Numerical solutions of PDE – finite difference approximation to derivatives,Numerical solution of\n
+two dimensional Laplace\’s equation, one dimensional heat and wave equations\n
+\n
+Unit-8\n
+DIFFERENCE EQUATIONS AND Z-TRANSFORMS\n
+6 hours\n
+\n
+Difference equations: Basic definition; Z-transforms – definition, standard Z-transforms,\n
+damping rule, shifting rule, initial value and final value theorems.\n
+Inverse Z-transform. Application of Z-transforms to solve difference equations.</string>
+    <string name="ramesh">Faculty Name - Dr. Ramesh Babu D.R.\n
+Designation- Professor and Head\n
+Educational Qualification -M.Tech, Ph.D\n
+Experience in Years -14\n
+Area of Interest -Image Processing\n
+Email Id- hod-cse@dayanandasagar.edu\n</string>
+    <string name="amutha">        Faculty Name -Dr. Amutha S.\n
+Designation- Professor\n
+Educational Qualification- M.Tech, Ph.D\n
+Experience in Years- 22\n
+Area of Interest -Image Processing, BigData Analysis\n
+Email Id- amutha-cs@dayanandasagar.edun\n</string>
+    <string name="deppak">        Faculty Name Mr. Deepak.G\n
+Designation- Asst. Prof.\n
+Educational Qualification- BE, M.Tech, (Ph.D)\n
+Experience in Years- 5\n
+Area of Interest- Cloud Security\n
+Email Id- deepak-cs@dayanandasagar.edu\n</string>
+    <string name="mamtha">    Faculty Name - Mrs. Mamatha.R\n
+    Designation- Assistant Professor\n
+    Educational Qualification- BE, M.Tech, (Ph.D)\n
+    Experience in Years- 5\n
+    Area of Interest- Image Processing\n
+    Email Id -mamatha-cs@dayanandasagar.edu\n</string>
+    <string name="arbind">    Faculty Name- Dr. Arbind Kumar Gupta\n
+    Designation- Professor\n
+    Educational Qualification- M.Tech, Ph.D\n
+    Experience in Years- 6 moths+\n
+    Industry Experience of - 20 years\n
+    Area of Interest- Networking , Cloud
+    Computing\n
+    Email Id -arabindcs@dayanandasagar.edu\n</string>
+    <string name="amaresha">    Faculty Name- Mr. Amaresha K.S\n
+    Designation- Asst. Prof\n
+    Educational Qualification- BE, M.Tech, (Ph.D)\n
+    Experience in Years- 6\n
+    Area of Interest- Image Processing\n
+    Email Id- amaresh-cs@dayanandasagar.edu\n</string>
+    <string name="ravi">    Faculty Name- Mr. Ravichandra H\n
+    Designation- Asst. Prof.\n
+    Educational Qualification- BE, M.Tech\n
+    Experience in Years- 9\n
+    Area of Interest- Big Data, Data Mining and Software
+    Testing\n
+    Email Id- ravichandracs@dayanandasagar.edu\n</string>
+    <string name="bhaskara">    Faculty Name- Prof. Bhaskara Rao\n
+    Designation- Associate Professor\n
+    Educational Qualification- BE,ME\n
+    Experience in Years- 30 \n
+    Area of Interest- Networking, Image processing\n
+    Email Id- bhaskararaocs@dayanandasagar.ed\n</string>
+    <string name="anitha">    Faculty Name- Ms. Anitha M\n
+    Designation- Asst. Prof.\n
+    Educational Qualification- BE, M.Tech\n
+    Experience in Years- 6\n
+    Area of Interest- Image Processing and Graph
+    theory\n
+    Email Id- anithacs@dayanandasagar.edu\n</string>
+    <string name="rama">    Faculty Name- Prof. Ramakrishna K.A\n
+    Designation- Professor\n
+    Educational Qualification- MS\n
+    Experience in Years- 6years+Industry 30 years\n
+    Area of Interest- Software Engineering\n
+    Email Id- ramakrishnacs@dayanandasagar.edu\n</string>
+    <string name="harish">    Faculty Name- Mr. Harish Kumar N\n
+    Designation- Asst. Prof.\n
+    Educational Qualification- BE, M.Tech\n
+    Experience in Years- 4\n
+    Area of Interest- Networking and Security\n
+    Email Id: harish-cs@dayanandasagar.edu\n</string>
+    <string name="venkat">    Faculty Name- Dr. S. Venkatesan\n
+    Designation- Professor\n
+    Educational Qualification- M.E, Ph.D\n
+    Experience in Years- 14 yrs\n
+    Area of Interest- Digital Image Processing, Pattern
+    Recognition, Soft Computing,
+    Otimization Techniques\n
+    E-mail ID: selvamvenkatesan@gmail.com\n</string>
+    <string name="prasad">    Faculty Name: Mr. Prasad A.M.\n
+    Designation: Associate Professor\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 21 yrs\n
+    Area of Interest: Network Security\n
+    Email Id: prasad-cs@dayanandasagar.edu\n</string>
+    <string name="sonal">    Faculty Name: Mrs. Sonal N Kharecha\n
+    Designation: Asst. Prof\n
+    Educational Qualification: BE, M.Tech\n
+    Experience in Years: 7\n
+    Area of Interest: Image Processing\n
+    Email Id: sonal-cs@dayanandasagar.edu\n</string>
+    <string name="nagaraj">    Faculty Name: Mr. Nagaraj J\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 6\n
+    Area of Interest: Image Processing\n
+    Email Id: nagaraj-cs@dayanandasagar.edu\n</string>
+    <string name="bhanu">    Faculty Name: Bhanupriya M P\n
+    Designation: Assistant Professor\n
+    Educational Qualification: B.E, M.Tech\n
+    Experience in Years: 1\n
+    Area of Interest: Cryptography, Compiler Design\n
+    E-mail ID: priyamp.rao@gmail.com\n</string>
+    <string name="sunitha">    Faculty Name: Mrs. Sunitha M S\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 6\n
+    Area of Interest: Networking\n
+    Email Id: sunitha-cs@dayanandasagar.edu\n</string>
+    <string name="anil">    Faculty Name: Mr. Anil Sagar T\n
+    Designation: Assistant Professor\n
+    Educational Qualification: B.E, M.Tech\n
+    Experience in Years: \n
+    Area of Interest: Big Data Management\n
+    E-mail ID: anilsagar001@gmail.com\n</string>
+    <string name="moknika">    Faculty Name: Mrs. Monika P\n
+    Designation: Asst. Prof.\n
+    Educational Qualification: BE, M.Tech, ( Ph.D )\n
+    Experience in Years: 1.5yrs Industry and 6.5 yrs Teaching\n
+    Area of Interest: Semantic Web\n
+    Email Id: monika-cs@dayanandasagar.edu\n</string>
+    <string name="arun">    Faculty Name: Mr. Nakatha Arun Kumar\n
+    Designation: Assistant Professor\n
+    Educational Qualification: B.E, M.Tech\n
+    Experience in Years: 2\n
+    Area of Interest: Computer Networks\n
+    E-mail ID: arunnakhate@gmail.com\n</string>
+    <string name="rash">    Faculty Name: Mrs. Rashmi S.R\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 11\n
+    Area of Interest: Artificial Intelligence\n
+    Email Id: rashmics@dayanandasagar.edu\n</string>
+    <string name="asha">    Faculty Name: Mrs. Asha Philip\n
+    Designation: Assistant Professor\n
+    Educational Qualification: B.Tech, M.Tech\n
+    Experience in Years: 3 yrs of Industrial Experience\n
+    Area of Interest: Data Security\n
+    E-mail ID: ashamadaplathu@gmail.com\n</string>
+    <string name="sasidhar">    Faculty Name: Mr. Sasidhar B\n
+    Designation: Asst. Prof.\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 7\n
+    Area of Interest: Image Processing\n
+    Email Id: sasidhar-cs@dayanandasagar.edu\n</string>
+    <string name="annapoorna">    Faculty Name: Mrs. Annapoorna\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech\n
+    Experience in Years: 1.6 years\n
+    Area of Interest: Computer Networking\n
+    Email Id: annapoornacs@dayanandasagar.ed\n</string>
+    <string name="vindhya">    Faculty Name: Mrs. Vindhya M.\n
+    Designation: Asst. Prof.\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 15\n
+    Area of Interest: Image Processing and Computer Vision\n
+    Email Id: vindhya-cs@dayanandasagar.edu\n</string>
+    <string name="nayana">    Faculty Name: Ms. Nayana N\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech\n
+    Experience in Years: 6 months\n
+    Area of Interest: Networking\n
+    Email Id: nayanacsedayanandasagar.edu\n</string>
+    <string name="sasi">    Faculty Name: Mr. Sasikumar Gurumoorthy\n
+    Designation: Associate Professor\n
+    Educational Qualification: B.E., M.E., (Ph.D)\n
+    Experience in Years: 9.5 yrs of Teaching + 3.6 yrs of
+    Industrial experience\n
+    Area of Interest: Intelligent System\n
+    E-mail ID: mithrangurugsk@gmail.com\n</string>
+    <string name="sahana">    Faculty Name: Mrs. SahanaDamale\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech\n
+    Experience in Years: 6 months\n
+    Area of Interest: Image Processing\n
+    Email Id: sahanacs@dayanandasagar.edu\n</string>
+    <string name="shubha">    Faculty Name: Mrs. Shubha Bhat\n
+    Designation: Associate Professor\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 07 years Teaching + Industry 5 years\n
+    Area of Interest: Image Processing and Computer Vision\n
+    Email Id: shubha-cs@dayanandasagar.edu\n</string>
+    <string name="asnika">    Faculty Name: Ms. Asnika.S\n
+    Designation: Asst. Prof.\n
+    Educational Qualification: BE, M.Tech\n
+    Experience in Years: 6 months\n
+    Area of Interest: Image Processing\n
+    Email Id: asnika-cs@dayanandasagar.edu\n</string>
+    <string name="dhara">    Faculty Name: Dhara K N\n
+    Designation: Assistant Professor\n
+    Educational Qualification: B.E, M.Tech\n
+    Experience in Years: 1\n
+    Area of Interest: Computer Networks\n
+    E-mail ID: dharakhatokar@gmail.com\n</string>
+    <string name="poornima">    Faculty Name: Mrs. Poornima A.B\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 6\n
+    Area of Interest: Cloud Testing\n
+    Email Id: poornima-cs@dayanandasagar.edu\n</string>
+    <string name="anupama">    Faculty Name: Anupama Vijay Kumar\n
+    Designation: Assistant Professor\n
+    Educational Qualification: B.E, M.Tech\n
+    Experience in Years: 3\n
+    Area of Interest :Wireless Sensor Networks\n
+    E-mail ID: anupamarevadi@gmail.com\n</string>
+    <string name="preeti">    Faculty Name: Mrs. Preeti Satish\n
+    Designation: Associate Professor\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 10.5 yrs\n
+    Area of Interest: Software Engineering and software testing \n
+    Email Id : preeti-cs@dayanandasagar.edu\n</string>
+    <string name="swetha">    Faculty Name: Mrs. Swetha M D\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech\n
+    Experience in Years: 2\n
+    Area of Interest: Networking\n
+    Email Id: shwethacs@dayanandasagar.edu\n</string>
+    <string name="sandhya">    Faculty Name: Mrs. Sandhya N.\n
+    Designation: Associate Professor\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience: 11 Years\n
+    Area of Interest: Image Processing\n
+    Email Id: sandhya-cs@dayanandasagar.edu\n</string>
+    <string name="smera">    Faculty Name: Mrs. SmeraLingesh\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech\n
+    Experience in Years: 3\n
+    Area of Interest: Image Processing\n
+    Email Id: smera-cs@dayanandasagar.edu\n</string>
+    <string name="kusuma">    Faculty Name: Mrs. Kusuma M.\n
+    Designation: Associate Prof.\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 22\n
+    Area of Interest: Brain Computer Interface\n
+    Email Id: kusuma-cs@dayanandasagar.edu\n</string>
+    <string name="rashmi">    Faculty Name: Ms. Rashmi Reddy\n
+    Designation: Assistant Professor\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 3\n
+    Area of Interest: Image Processing\n
+    Email Id: rr-cs@dayanandasagar.edu\n</string>
+    <string name="taj">    Faculty Name: Mr. Mohd. Tajuddin\n
+    Designation: Associate Prof.\n
+    Educational Qualification: BE, M.Tech, (Ph.D)\n
+    Experience in Years: 17\n
+    Area of Interest: Crypto Biometrics\n
+    Email Id: tajuddin-cs@dayanandasagar.edu\n</string>
     <string name="title_activity_groups">groups</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_group_main_activity2">groupMainActivity2</string>
@@ -41,5 +352,7 @@
     <string name="title_activity_achievements">achievements</string>
     <string name="title_activity_achievements2">achievements2</string>
     <string name="title_activity_achievements3">achievements3</string>
+    <string name="title_activity_pdfviewer">pdfviewer</string>
+    <string name="title_activity_main_activity3">MainActivity3</string>
 
 </resources>

@@ -20,6 +20,7 @@ public class achievements2 extends FragmentActivity {
         viewPager = (ViewPager) findViewById(R.id.pager);
         FragmentManager fragmentManager = getSupportFragmentManager();
         viewPager.setAdapter(new MyAdapter(fragmentManager));
+
     }
 
 

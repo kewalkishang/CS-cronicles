@@ -26,12 +26,9 @@ public class achievements extends ActionBarActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        if(v.getId()==R.id.button) {
+
             Intent intent = new Intent(this,achievements2.class);
             startActivity(intent);
-        }else {
-            Intent in = new Intent(this, achievements3.class);
-            startActivity(in);
-        }
+
     }
 }
