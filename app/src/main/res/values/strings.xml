@@ -15,9 +15,10 @@
         <item>Syllabus</item>
     </string-array>
     <string-array name="kewal">//look there is a comment here. now im gonna push it and see if you can see it too!!!
-        <item>kewal</item>
-        <item>kishan</item>
-    </string-array>
+        <item>kewal</item>//this is a change
+        <item>kishan</item>//another change
+        // a change on every line
+    </string-array>// do you see this?
      <string-array name="mahima">
         <item>singh</item>
         <item>deo</item>
