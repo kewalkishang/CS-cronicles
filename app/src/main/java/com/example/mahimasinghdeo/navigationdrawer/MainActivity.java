@@ -3,7 +3,6 @@ package com.example.mahimasinghdeo.navigationdrawer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -36,15 +35,17 @@ public class MainActivity extends ActionBarActivity {
 
 
         setSupportActionBar(tb);
+//        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setTitle("DSCE-CSE");
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 //        tb.setTitle("hakm");
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
-        actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setDisplayUseLogoEnabled(false);
-        actionBar.setHomeButtonEnabled(true);
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.setDisplayHomeAsUpEnabled(true);
+//        actionBar.setDisplayShowHomeEnabled(true);
+//        actionBar.setDisplayShowTitleEnabled(true);
+//        actionBar.setDisplayUseLogoEnabled(false);
+//        actionBar.setHomeButtonEnabled(true);
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         drawerListener = new ActionBarDrawerToggle(MainActivity.this, drawerLayout, R.string.drawer_open, R.string.drawer_close);
@@ -127,7 +128,7 @@ public class MainActivity extends ActionBarActivity {
 //    }
 
     class MyAdapter1 extends RecyclerView.Adapter<MyAdapter1.MyHolder> {
-        int[] images = {R.drawable.fac, R.drawable.clubs, R.drawable.ach, R.drawable.gall, R.drawable.cal, R.drawable.place};
+        int[] images = {R.drawable.news,R.drawable.fac, R.drawable.clubs, R.drawable.ach, R.drawable.gall, R.drawable.cal, R.drawable.place};
         String[] items = getResources().getStringArray(R.array.Categories);
 
         @Override
@@ -147,28 +148,33 @@ public class MainActivity extends ActionBarActivity {
                 public void onClick(View v) {
                     Toast.makeText(getApplication(), "" + position, Toast.LENGTH_SHORT).show();
                     if (position == 0) {
-                        Intent intent = new Intent(getApplication(), faculty.class);
+                        Intent intent = new Intent(getApplication(), newsfeed.class);
 
                         startActivity(intent);
                     }
                     if (position == 1) {
-                        Intent intent = new Intent(getApplication(), groups.class);
+                        Intent intent = new Intent(getApplication(), faculty.class);
 
                         startActivity(intent);
                     }
                     if (position == 2) {
-                        Intent intent = new Intent(getApplication(), achievements2.class);
+                        Intent intent = new Intent(getApplication(), groups.class);
 
                         startActivity(intent);
                     }
                     if (position == 3) {
+                        Intent intent = new Intent(getApplication(), achievements2.class);
+
+                        startActivity(intent);
+                    }
+                    if (position == 4) {
                         Intent intent = new Intent(getApplication(), gallery1.class);
 
                         startActivity(intent);
-                    } else if (position == 4) {
+                    } else if (position == 5) {
                         Intent in = new Intent(MainActivity.this, calendar.class);
                         startActivity(in);
-                    } else if (position == 5) {
+                    } else if (position == 6) {
                         Intent intent = new Intent(MainActivity.this, syllabus.class);
                         startActivity(intent);
                     }

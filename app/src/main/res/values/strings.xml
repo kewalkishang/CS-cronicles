@@ -7,6 +7,7 @@
     <string name="drawer_close">Close Navigation Drawer</string>
 
     <string-array name="Categories">
+        <item>News Feed</item>
         <item>Faculty</item>
         <item>Clubs</item>
         <item>placements</item>
@@ -15,7 +16,7 @@
         <item>Syllabus</item>
     </string-array>
     <string-array name="kewal">
-//look there is a comment here. now im gonna push it and see if you can see it too!!!                <item>kewal</item>
+//look there is a comment here. now im gonna push it and see if you can see it too!!!                                <item>kewal</item>
         <item>kishan</item>
     </string-array>
     <string-array name="mahima">
@@ -23,72 +24,6 @@
         <item>deo</item>
     </string-array>
 
-    <string name="math">           ENGINEERING MATHEMATICS-3(10MAT31)\n
-                               			         Part-A\n
-Unit-1\n
-FOURIER SERIES\n
-7 hours\n
-\n
-\n
-Periodic functions, Dirichlet\'s conditions, Fourier series of periodic functions\n
-of period 2π and arbitrary period, half range Fourier series. Complex form of \n
-Fourier Series. Practical harmonic analysis.\n
-\n
-Unit-2\n
-FOURIER TRANSFORMS\n
-6 hours\n
-\n
-Infinite Fourier transform, Fourier Sine and Cosine transforms, properties,Inverse transforms\n
-\n
-Unit-3\n
-APPLICATIONS OF PDE\n
-6 hours\n
-\n
-Various possible solutions of one dimensional wave and heat equations, two dimensional Laplace\’s\n
-equation by the method of separation of variables,Solution of all these equations with specified\n
-boundary conditions.D\’Alembert\’s solution of one dimensional wave equation.\n
-\n
-Unit-4\n
-CURVE FITTING AND OPTIMIZATION\n
-7 hours\n
-\n
-Curve fitting by the method of least squares- Fitting of curves of the form\n
-y=ax+b, y=ax2+bx+c, y=aebx , y=axb\n
-Optimization: Linear programming, mathematical formulation of linear programming problem (LPP),\n
-Graphical method and simplex method.\n
-\n Part B\n
-\n
-Unit-5
-NUMERICAL METHODS - 1\n
-6 hours\n
-\n
-Numerical Solution of algebraic and transcendental equations: Regula-falsimethod, Newton - Raphson method. \nIterative methods of solution of a systemof equations: Gauss-seidel and Relaxation methods. Largest eigen value andthe corresponding eigen vector by Rayleigh’s power method.\n
-\n
-Unit-6\n
-NUMERICAL METHODS – 2\n
-7 hours\n
-\n
-Finite differences: Forward and backward differences, Newton\’s forward and backward interpolation\n
-formulae. Divided differences - Newton\’s divided difference formula, Lagrange\’s interpolation\n
-formula and inverse interpolation formula.\n
-\n
-Numerical integration: Simpson\’s one-third, three-eighth and Weddle\’s rules\n
-(All formulae/rules without proof)\n
-\n
-Unit-7\n
-NUMERICAL METHODS – 3\n
-7 hours\n
-\n
-Numerical solutions of PDE – finite difference approximation to derivatives,Numerical solution of\n
-two dimensional Laplace\’s equation, one dimensional heat and wave equations\n
-\n
-Unit-8\n
-DIFFERENCE EQUATIONS AND Z-TRANSFORMS\n
-6 hours\n
-\n
-Difference equations: Basic definition; Z-transforms – definition, standard Z-transforms,\n
-damping rule, shifting rule, initial value and final value theorems.\n
-Inverse Z-transform. Application of Z-transforms to solve difference equations.</string>
     <string name="ramesh">Faculty Name - Dr. Ramesh Babu D.R.\n
 Designation- Professor and Head\n
 Educational Qualification -M.Tech, Ph.D\n
@@ -354,5 +289,7 @@ Email Id- deepak-cs@dayanandasagar.edu\n</string>
     <string name="title_activity_achievements3">achievements3</string>
     <string name="title_activity_pdfviewer">pdfviewer</string>
     <string name="title_activity_main_activity3">MainActivity3</string>
+    <string name="title_activity_newsfeed">newsfeed</string>
+    <string name="title_activity_splash">splash</string>
 
 </resources>

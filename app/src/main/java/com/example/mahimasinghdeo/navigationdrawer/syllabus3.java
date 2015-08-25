@@ -1,16 +1,13 @@
 package com.example.mahimasinghdeo.navigationdrawer;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class syllabus3 extends ActionBarActivity {
-  int [] textual={R.string.math};
+//  int [] textual={R.string.math};
     TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +17,7 @@ public class syllabus3 extends ActionBarActivity {
         Intent intent=getIntent();
         int y=intent.getIntExtra("name",-1);
 
-        tv.setText(textual[y]);
+//        tv.setText(textual[y]);
 
     }
 

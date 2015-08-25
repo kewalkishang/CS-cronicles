@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 
 public class gallery1 extends ActionBarActivity {
-  int pic1[]={R.drawable.pica,R.drawable.picb,R.drawable.picc,R.drawable.picd,R.drawable.pice,R.drawable.picf};
+  int pic1[]={R.drawable.lumiere,R.drawable.picb,R.drawable.picc,R.drawable.picd,R.drawable.pice,R.drawable.picf};
     String pics[]={"LUMIERE '15","SPORTS DAY","AYUDHA POOJA","ORIENTATION","TEACHERS DAY","FRESHERS"};
 
 //int pic1[]={R.drawable.pica,R.drawable.pica,R.drawable.pica,R.drawable.pica,R.drawable.pica,R.drawable.pica};
