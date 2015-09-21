@@ -8,15 +8,13 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.mahimasinghdeo.navigationdrawer.R;
-
 /**
  * Created by kewal on 3/29/2015.
  */
 public class fragb extends Fragment {
 
     ListView lv;
-    String[] items={"3 ) FIRST IA","4 ) FIRST IA","5 ) FIRST IA","17) GANESHA CHATURTHI","24) BAKRID",};
+    String[] items={"7 ) FIRST IA","8 ) FIRST IA","9 ) FIRST IA","17) GANESHA CHATURTHI","24) BAKRID",};
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragb,container,false);
         lv= (ListView) v.findViewById(R.id.listView2);

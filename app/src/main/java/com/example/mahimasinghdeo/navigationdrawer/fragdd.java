@@ -14,7 +14,7 @@ import android.widget.ListView;
  */
 public class fragdd extends Fragment {
     ListView lv;
-    String items[]={};
+    String items[]={"1.    Tesco     4","2.   Incture      4","3.	 Raremile       04","4.	 Deloitte	   03",};
     public void onAttach(Activity activity) {
         super.onAttach(activity);
     }

@@ -2,38 +2,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="#ff5596ff"
     tools:context="makh.com.teacher.MainActivity2">
 
-    <ImageView
-       android:layout_width="match_parent"
-       android:layout_height="200dp"
-       android:src="@drawable/b"
-       android:id="@+id/im2"
-
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_alignBottom="@+id/imageView" />
 
     <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:id="@+id/im2"
+        android:background="#ff5596ff"
+        android:layout_marginLeft="120dp"
+        android:layout_toRightOf="@+id/imageView" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+
         android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/harivatsav"
+        app:border_width="1dp"
         android:id="@+id/imageView"
-        android:layout_marginLeft="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_margin="10dp"
+        app:border_color="#ff5596ff" />
 
     <TextView
         android:text="@string/hello_world"
         android:layout_width="match_parent"
         android:id="@+id/textView2"
-        android:background="#ffaecad1"
-        android:paddingLeft="20dp"
+        android:background="#ffffff"
+        android:padding="8dp"
+        android:layout_margin="10dp"
         android:textSize="18dp"
-        android:paddingRight="20dp"
+        android:textColor="#000000"
         android:layout_height="match_parent"
 
-        android:layout_below="@+id/im2" />
+        android:layout_below="@+id/imageView" />
 </RelativeLayout>

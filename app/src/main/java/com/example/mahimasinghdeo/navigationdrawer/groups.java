@@ -1,24 +1,20 @@
 package com.example.mahimasinghdeo.navigationdrawer;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class groups extends Activity  {
     ListView lv1;
-    String items[]={"mil","instrumentation","vtu reeasch"};
-    String nums[]={"mil stuff","instrumentation stuff","vtu stuff"};
+    String items[]={"Microsoft Innovation Lab","Centre for Ophtalmic Instrumentation & Technology","VTU Research Lab"};
+    String nums[]={"Microsoft Innovation lab (MILs) are facilities that provide world-class resources and support for students, entrepreneurs and startups, accelerating the creation of new companies, jobs, and growth of the local software ecosystem.\n \nThe MICs play a critical role in bridging the gap between technology and the needs of the world. \n \n Faculty incharge -\nMrs. Poornima A.B \n Mrs.Shubha Bhat \n Mrs. Rashmi S.R ","Research concentrates on flourescence spectroscopy in the eye designing instruments for automating,thus the physiological parameters of our interest could be measured. \n The data collected is then processed and compared from a normal person's eye to a diabetic person with contact lens \n \n In collaboratiion with Dr.S.P.Srinivas,IU ,Bloomingtom,USA \n \n Faculty incharge -\n Ms. Asnika.S \nMrs. Sahana Damale     ","\n" +
+            "VTU has Research Centres in more than 75 affiliated institutions.  More than thousand research scholars are working for Master's and Doctoral degree programmes of VTU. "};
     public class customadapter extends BaseAdapter {
 
 

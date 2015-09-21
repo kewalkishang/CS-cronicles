@@ -1,8 +1,9 @@
 package com.example.mahimasinghdeo.navigationdrawer;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,29 +14,27 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.mime.HttpMultipartMode;
-import org.apache.http.entity.mime.MultipartEntity;
-import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.protocol.BasicHttpContext;
-import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 
 public class newsfeed extends ActionBarActivity {
-    TextView tv;
-    String str;
+    TextView tv,tv1;
+    private ProgressDialog mProgressDialog;
+    String header,contentin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newsfeed);
         tv= (TextView) findViewById(R.id.json);
+        tv1= (TextView) findViewById(R.id.json1);
+        mProgressDialog = new ProgressDialog(newsfeed.this);
+        mProgressDialog.setIndeterminate(false);
+
+        mProgressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
        new kewal().execute();
     }
 
@@ -63,19 +62,13 @@ public class newsfeed extends ActionBarActivity {
     }
     public class kewal extends AsyncTask<Void, Void, Void> {
 
-        String url = "http://204.152.203.111/timeline.php";
+        String url = "http://204.152.203.111/kewal.php";
 
         @Override
         protected Void doInBackground(Void... params) {
             HttpClient httpClient = new DefaultHttpClient();
-            HttpContext httpContext = new BasicHttpContext();
-            MultipartEntity multipartEntity = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
             try {
-                multipartEntity.addPart("type", new StringBody("tech"));
-
-                multipartEntity.addPart("page_no", new StringBody("1"));
                 HttpPost httpPost=new HttpPost(url);
-                httpPost.setEntity(multipartEntity);
                 HttpResponse httpResponse= httpClient.execute(httpPost);
                 HttpEntity httpEntity=httpResponse.getEntity();
                 String data= EntityUtils.toString(httpEntity);
@@ -92,21 +85,23 @@ public class newsfeed extends ActionBarActivity {
 
         private void parseJson(String data) {
             Log.d("kewal", data);
-            try {
-                JSONArray jsonArray=new JSONArray(data);
-                JSONObject jsonObject=jsonArray.getJSONObject(0);
-                str=jsonObject.getString("user_name");
 
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
+      header=data.substring(0,data.indexOf('$'));
+          contentin=data.substring(data.indexOf('$')+1,data.length()-1);
+        }
 
+        protected void onPreExecute(){
+
+            mProgressDialog.show();
         }
 
         @Override
         protected void onPostExecute(Void aVoid) {
+            mProgressDialog.dismiss();
             super.onPostExecute(aVoid);
-            tv.setText(str);
+            
+            tv.setText(header);
+            tv1.setText(contentin);
         }
     }
 }

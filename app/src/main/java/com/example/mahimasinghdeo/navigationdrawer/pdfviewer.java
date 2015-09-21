@@ -39,30 +39,30 @@ public class pdfviewer extends Activity {
             if (y == 6 && x == 0)
                 pdfView.fromAsset("syllabus.pdf").pages(0,16, 17, 18, 19).enableSwipe(true).showMinimap(true).load();
             else if (y == 7 && x == 0)
-                pdfView.fromAsset("syllabus.pdf").pages(0,20, 21, 22, 23).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,20, 21, 22).enableSwipe(true).showMinimap(true).load();
             if (y == 0 && x == 1)
-                pdfView.fromAsset("syllabus.pdf").pages(0,24, 25, 26).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,23,24, 25).enableSwipe(true).showMinimap(true).load();
             else if (y == 1 && x == 1)
-                pdfView.fromAsset("syllabus.pdf").pages(0,27, 28).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,26,27, 28).enableSwipe(true).showMinimap(true).load();
             pdfView = (PDFView) findViewById(R.id.pdfview);
             if (y == 2 && x == 1)
-                pdfView.fromAsset("syllabus.pdf").pages(0,29, 30).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,28,29).enableSwipe(true).showMinimap(true).load();
             else if (y == 3 && x == 1)
-                pdfView.fromAsset("syllabus.pdf").pages(0,31, 32).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 30,31).enableSwipe(true).showMinimap(true).load();
 
             if (y == 4 && x == 1)
-                pdfView.fromAsset("syllabus.pdf").pages(0,33, 34, 35).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 32,33, 34).enableSwipe(true).showMinimap(true).load();
             else if (y == 5 && x == 1)
-                pdfView.fromAsset("syllabus.pdf").pages(0,36, 37).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 35,36).enableSwipe(true).showMinimap(true).load();
             pdfView = (PDFView) findViewById(R.id.pdfview);
             if (y == 6 && x == 1)
-                pdfView.fromAsset("syllabus.pdf").pages(0,38, 39).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 37,38).enableSwipe(true).showMinimap(true).load();
             else if (y == 7 && x == 1)
-                pdfView.fromAsset("syllabus.pdf").pages(0,40, 41, 42).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 39,40,41).enableSwipe(true).showMinimap(true).load();
             if (y == 0 && x == 2)
-                pdfView.fromAsset("syllabus.pdf").pages(0,43, 44).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,42,43).enableSwipe(true).showMinimap(true).load();
             else if (y == 1 && x == 2)
-                pdfView.fromAsset("syllabus.pdf").pages(0,45, 46, 46).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,44,45,46).enableSwipe(true).showMinimap(true).load();
             else if (y == 2 && x == 2)
                 pdfView.fromAsset("syllabus.pdf").pages(0,47, 48).enableSwipe(true).showMinimap(true).load();
             else if (y == 3 && x == 2)
@@ -100,76 +100,76 @@ public class pdfviewer extends Activity {
                 pdfView.fromAsset("syllabus.pdf").pages(0,84, 85).enableSwipe(true).showMinimap(true).load();
 
             if (y == 10 && x == 3)
-                pdfView.fromAsset("syllabus.pdf").pages(0,86, 87).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,86, 87,88).enableSwipe(true).showMinimap(true).load();
             else if (y == 11 && x == 3)
-                pdfView.fromAsset("syllabus.pdf").pages(0,88, 89).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 89,90).enableSwipe(true).showMinimap(true).load();
             if (y == 0 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,90, 91, 92).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 91, 92,93).enableSwipe(true).showMinimap(true).load();
             else if (y == 1 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,93, 94).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 94,95).enableSwipe(true).showMinimap(true).load();
 
             if (y == 2 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,95, 96, 97).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 96, 97,98).enableSwipe(true).showMinimap(true).load();
             else if (y == 3 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,98, 99).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 99,100).enableSwipe(true).showMinimap(true).load();
             pdfView = (PDFView) findViewById(R.id.pdfview);
             if (y == 4 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,100, 101).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 101,102).enableSwipe(true).showMinimap(true).load();
             else if (y == 5 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,102, 103, 104).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 103, 104,105).enableSwipe(true).showMinimap(true).load();
 
             else if (y == 6 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,105, 106, 107).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 106, 107,108).enableSwipe(true).showMinimap(true).load();
             else if (y == 7 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,108, 109, 110).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 109, 110,111).enableSwipe(true).showMinimap(true).load();
             if (y == 8 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,111, 112).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,112,113).enableSwipe(true).showMinimap(true).load();
             else if (y == 9 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,113, 114).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 114,115).enableSwipe(true).showMinimap(true).load();
             else if (y == 10 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,115, 116, 117).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 116, 117,118).enableSwipe(true).showMinimap(true).load();
             else if (y == 11 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,118, 119).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 119,120).enableSwipe(true).showMinimap(true).load();
 
             else if (y == 12 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,120, 121, 122).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 121, 122,123).enableSwipe(true).showMinimap(true).load();
             else if (y == 13 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,123, 124).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 124,125).enableSwipe(true).showMinimap(true).load();
             pdfView = (PDFView) findViewById(R.id.pdfview);
             if (y == 14 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,125, 126, 127).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 126, 127,128).enableSwipe(true).showMinimap(true).load();
             else if (y == 15 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,128, 129, 130).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 129, 130,131).enableSwipe(true).showMinimap(true).load();
             else if (y == 16 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,131, 132).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 132,133).enableSwipe(true).showMinimap(true).load();
             else if (y == 17 && x == 4)
-                pdfView.fromAsset("syllabus.pdf").pages(0,133, 134).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 134,135).enableSwipe(true).showMinimap(true).load();
             else if (y == 0 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,135,136).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,136,137).enableSwipe(true).showMinimap(true).load();
             else if (y == 1 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,137,138).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,138,139).enableSwipe(true).showMinimap(true).load();
             else if (y == 2 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,139,140).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,140,141).enableSwipe(true).showMinimap(true).load();
             else if (y == 3 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,141,142,143).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,142,143,144).enableSwipe(true).showMinimap(true).load();
 
             else if (y == 4 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,144, 145).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 145,146).enableSwipe(true).showMinimap(true).load();
             else if (y == 5 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,146, 147,148).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 147,148,149).enableSwipe(true).showMinimap(true).load();
 
             else if (y == 6 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,149,150).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,150,151).enableSwipe(true).showMinimap(true).load();
             else if (y == 7 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,151, 152).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0, 152,153).enableSwipe(true).showMinimap(true).load();
             else if (y == 8 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,153,154 ).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,154,155 ).enableSwipe(true).showMinimap(true).load();
             else if (y == 9 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,155,156,157).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,156,157,158).enableSwipe(true).showMinimap(true).load();
             else if (y == 10 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,158,159).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,159,161).enableSwipe(true).showMinimap(true).load();
             else if (y == 11 && x == 5)
-                pdfView.fromAsset("syllabus.pdf").pages(0,160,162).enableSwipe(true).showMinimap(true).load();
+                pdfView.fromAsset("syllabus.pdf").pages(0,161,162).enableSwipe(true).showMinimap(true).load();
             else if (y == 12 && x == 5)
                 pdfView.fromAsset("syllabus.pdf").pages(0,163,164,165).enableSwipe(true).showMinimap(true).load();
             else if (y == 13 && x == 5)
